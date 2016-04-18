@@ -149,6 +149,11 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * Vendor Service Providers...
+         */
+        React\ReactServiceProvider::class,
+
+        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
