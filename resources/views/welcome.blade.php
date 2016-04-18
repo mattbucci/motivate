@@ -5,7 +5,7 @@
     </head>
     <body>
 
-    @react_component('HelloWorld', [ 'phrase' => 'ES6' ], [ 'prerender' => true ])
+    @react_component('App.HelloWorld', [ 'phrase' => 'ES6' ], [ 'prerender' => true ])
 
     <script src="{{ asset('vendor/react-laravel/react.js') }}"></script>
     <script src="{{ asset('vendor/react-laravel/react-dom.js') }}"></script>
