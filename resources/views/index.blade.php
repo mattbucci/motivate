@@ -16,8 +16,8 @@
     <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
 
     <link rel="shortcut icon" href="img/favicons/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/vendor.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
 </head>
 
 <body>
@@ -156,7 +156,7 @@
                     <h5 class="white heading hide-hover">Premium Membership</h5>
                     <div class="bottom">
                         <h4 class="white heading small-heading no-margin regular">Register Today</h4>
-                        <h4 class="white heading small-pt">20% Discount</h4>
+                        <h4 class="white heading small-pt" style="padding: 0;padding-top: 5px;padding-left: 30px;">20% Discount</h4>
                         <a href="#" class="btn btn-white-fill expand">Register</a>
                     </div>
                 </div>
