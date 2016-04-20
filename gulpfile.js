@@ -13,6 +13,13 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass('app.scss');
+    mix.sass('vendor.scss');
+});
+
+elixir(function(mix) {
+    mix.copy('node_modules/font-awesome/fonts', 'public/css/fonts');
+    mix.copy('node_modules/elegant-icons/fonts', 'public/css/fonts');
+    mix.copy('resources/assets/img', 'public/img');
 });
 
 elixir(function(mix) {
