@@ -3,6 +3,8 @@
 
 @import "./components/navbar";
 
+@import "./pages/landing";
+
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 body {
   font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -203,7 +205,6 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
   color: white;
   border: 2px solid transparent;
   border-radius: 2px;
-  background: transparent;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }

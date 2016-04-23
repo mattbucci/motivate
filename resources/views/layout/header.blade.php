@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cardio: Free One Page Template by Luka Cvetinovic</title>
-    <meta name="description" content="Cardio is a free one page template made exclusively for Codrops by Luka Cvetinovic" />
-    <meta name="keywords" content="html template, css, free, one page, gym, fitness, web design" />
-    <meta name="author" content="Luka Cvetinovic for Codrops" />
-    <!-- Favicons (created with http://realfavicongenerator.net/)-->
+    <title>Motivate - @yield('title')</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Matthew Bucci" />
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
     <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
@@ -31,17 +30,16 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="img/logo.png" data-active-url="img/logo-active.png" alt=""></a>
+            <a class="navbar-brand pull-left" href="#">
+                <img class="pull-left" src="img/logo.png" data-active-url="img/logo-active.png" alt="">
+                <h3 class="brand-name pull-left"> Motivate </h1>
+            </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right main-nav">
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
-            </ul>
+                <li><a href="#services">Sign Up</a></li>
+                <li><a href="#team">Login</a></li>
         </div>
         <!-- /.navbar-collapse -->
     </div>

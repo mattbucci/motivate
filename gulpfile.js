@@ -28,5 +28,5 @@ elixir(function(mix) {
 });
 
 elixir(function(mix) {
-    mix.livereload();
+    mix.livereload(['app/**/*', 'public/**/*', 'resources/views/**/*', 'resources/assets/**/*']);
 });

@@ -5750,6 +5750,18 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.brand-name {
+  margin-top: .1em;
+  margin-left: .5em; }
+
+.intro-teaser {
+  margin-top: 150px; }
+
+.intro-about {
+  margin-top: 100px; }
+  .intro-about .btn {
+    margin-top: 20px; }
+
 body {
   font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -5916,7 +5928,6 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
   color: white;
   border: 2px solid transparent;
   border-radius: 2px;
-  background: transparent;
   transition: all 0.3s ease; }
 
 .btn:hover,
