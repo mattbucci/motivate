@@ -1,15 +1,10 @@
 .brand-name {
+  color: white;
   margin-top: .05em;
   margin-left: .6em;
   font-size: 2em;
 }
 
-a {
-  text-decoration: none;
-  color: #00a8ff;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
 /* Navigation Bar ( Navbar ) */
 
 nav.navbar {
@@ -21,8 +16,14 @@ nav.navbar {
   transition: all 0.3s ease;
   top: 50px;
 
-  .navbar-nav li.active a:not(.btn) {
-    color: #00a8ff !important;
+  li {
+    a {
+      color: white;
+
+      &:hover {
+        background:  #00a8ff
+      }
+    }
   }
 
   .navbar-fixed-top {

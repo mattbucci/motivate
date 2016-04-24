@@ -1,82 +1,30 @@
-@extends('layouts.app')
+@extends('layout.master')
+
+@section('title', 'Sign Up')
+
+@section('bodyClasses', 'splash-background no-footer')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
-                        {!! csrf_field() !!}
+    <div class="form-container">
+        <h3 class="white">Sign Up</h3>
+        <form role="form" method="POST" action="{{ url('/register') }}" class="popup-form">
+            @if ($errors->has('name'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('name') }}</strong>
+                </span>
+            @endif
+            {!! csrf_field() !!}
+            <input type="text" class="form-control form-white" name="name" placeholder="Full Name"  value="{{ old('name') }}">
+            <input type="email" class="form-control form-white" name="email" placeholder="Email Address" value="{{ old('email') }}">
+            <input type="password" class="form-control form-white" name="password" placeholder="Password">
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">Name</label>
-
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" name="name" value="{{ old('name') }}">
-
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">E-Mail Address</label>
-
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" name="email" value="{{ old('email') }}">
-
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input type="password" class="form-control" name="password">
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">Confirm Password</label>
-
-                            <div class="col-md-6">
-                                <input type="password" class="form-control" name="password_confirmation">
-
-                                @if ($errors->has('password_confirmation'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-user"></i>Register
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+            <div class="checkbox-holder text-left">
+                <div class="checkbox">
+                    <input type="checkbox" value="None" id="squaredOne" name="check" />
+                    <label for="squaredOne"><span>I Agree to the <strong><a href="#" style="color: white">Terms &amp; Conditions</a></strong></span></label>
                 </div>
             </div>
-        </div>
+            <button type="submit" class="btn btn-submit">Register</button>
+        </form>
     </div>
-</div>
-@endsection
+@stop

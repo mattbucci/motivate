@@ -14,5 +14,3 @@
 Route::get('/', "PageController@landing");
 
 Route::auth();
-
-Route::get('/home', 'HomeController@index');

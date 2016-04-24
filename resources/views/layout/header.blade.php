@@ -30,7 +30,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand pull-left" href="#">
+            <a class="navbar-brand pull-left" href="/">
                 <img class="pull-left" src="img/motivate.png" style="width: 40px;" alt="">
                 <h3 class="brand-name pull-left"> Motivate </h1>
             </a>
@@ -38,8 +38,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right main-nav">
-                <li><a href="#services">Sign Up</a></li>
-                <li><a href="#team">Login</a></li>
+                <li><a href="/register">Sign Up</a></li>
+                <li><a href="/login">Login</a></li>
         </div>
         <!-- /.navbar-collapse -->
     </div>

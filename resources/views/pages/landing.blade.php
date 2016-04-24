@@ -14,8 +14,8 @@
             <div class="intro-about">
                 <h4>Having Trouble Getting Motivated?</h4>
                 <p>Motivate helps you reach your goals by breaking your long term goals into easy to achieve habits and rewarding your progress.</p>
-                <a class="btn btn-blue" href="/signup">Let's get Started!</a>
-                <a class="btn btn-warning" href="/app/download">Login To An Existing Account</a>
+                <a class="btn btn-blue" href="/register">Let's get Started!</a>
+                <a class="btn btn-warning" href="/login">Login To An Existing Account</a>
             </div>
         </div>
     </header>

@@ -47,7 +47,25 @@
   margin-top: 150px;
 }
 
+.splash-background {
+  background: url("../img/popup.jpg");
+  background-size: cover;
+}
+
+.no-footer {
+  footer {
+    display: none;
+  }
+}
+
 // shame from base theme below
+
+a {
+  text-decoration: none;
+  color: #00a8ff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 
 .trial-button {
   overflow: hidden !important;

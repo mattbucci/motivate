@@ -185,3 +185,80 @@
   border-color: #bbb;
   background: #bbb;
 }
+
+.form-container {
+  position: relative;
+  padding: 45px 30px;
+  text-align: center;
+  box-shadow: none;
+  border-radius: 2px;
+  max-width: 560px;
+  margin: 150px auto;
+  width: 100%;
+}
+
+.popup-form {
+  width: 90%;
+  max-width: 375px;
+  margin: 60px auto;
+
+  @media(max-width: 768px) {
+    width: 100%;
+    margin: 60px auto;
+
+  }
+
+  .form-control {
+    margin: 20px 0;
+
+    @media(max-width: 768px) {
+      :not(.dropdown):focus {
+        position: relative;
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+    }
+
+    &.dropdown {
+      &:after {
+        content: '\f0d7';
+        font-family: 'FontAwesome';
+        display: inline-block;
+        float: right;
+        color: white;
+      }
+    }
+  }
+
+  .dropdown {
+    text-align: left;
+
+    .dropdown-menu {
+      top: 65px;
+      width: 100%;
+      padding: 0;
+      border: 2px solid white;
+      border-top: 0;
+      border-radius: 0;
+      background: white;
+      box-shadow: none;
+
+      li {
+        font-size: 16px;
+        width: 100%;
+        background: transparent;
+
+        a {
+          width: 100%;
+          padding: 15px 30px;
+          color: #00a8ff;
+
+          &:hover{
+            color: #fff;
+            background: #00a8ff;
+          }
+        }
+      }
+    }
+  }
+}
