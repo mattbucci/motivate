@@ -1,9 +1,13 @@
 @import "./global/variables";
 @import "./global/bootstrap";
-@import "./global/theme";
+@import "./global/typography";
+@import "./global/util";
 
+@import "./components/footer";
+@import "./components/forms";
 @import "./components/navbar";
 @import "./components/typed";
+@import "./components/modal";
 
 @import "./pages/landing";
 

@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="css/vendor.css">
 </head>
 
-<body>
+<body class="@yield('bodyClasses')">
 <nav class="navbar">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand pull-left" href="#">
-                <img class="pull-left" src="img/logo.png" data-active-url="img/logo-active.png" alt="">
+                <img class="pull-left" src="img/motivate.png" style="width: 40px;" alt="">
                 <h3 class="brand-name pull-left"> Motivate </h1>
             </a>
         </div>

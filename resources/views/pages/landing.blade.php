@@ -2,6 +2,8 @@
 
 @section('title', 'Become a better you')
 
+@section('bodyClasses', 'landing')
+
 @section('content')
     <header id="intro" style="height: 100VH;">
         <div class="container">
@@ -17,5 +19,4 @@
             </div>
         </div>
     </header>
-
 @stop

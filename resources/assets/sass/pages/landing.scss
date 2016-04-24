@@ -1,11 +1,50 @@
-.intro-teaser {
-  margin-top: 150px;
-}
+.landing {
+  .intro-teaser {
+    margin-top: 150px;
+  }
 
-.intro-about {
-  margin-top: 100px;
+  .intro-about {
+    margin-top: 100px;
 
-  .btn {
-    margin-top: 20px;
+    .btn {
+      margin-top: 20px;
+    }
+  }
+
+
+  header {
+    position: relative;
+    width: 100%;
+    color: white;
+    background: rgba(28, 36, 65, 0.93);
+    background: url('../img/header.jpg');
+    background-size: cover;
+  }
+
+  header .table {
+    display: table;
+    height: 100%;
+  }
+
+  header .container {
+    height: 100%;
+  }
+
+  header .header-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+  }
+
+  footer {
+    background: transparent;
+    margin-top: -50px;
+    height: 50px;
+    padding: 0;
+
+    .bottom-footer {
+      margin: 0;
+    }
   }
 }

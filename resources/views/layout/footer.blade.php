@@ -6,9 +6,8 @@
             </div>
             <div class="col-sm-4 text-right text-center-mobile">
                 <ul class="social-footer">
-                    <li><a href="http://www.facebook.com/pages/Codrops/159107397912"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="http://www.twitter.com/codrops"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://plus.google.com/101095823814290637419"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="http://www.twitter.com/letsrtfm"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="github.com/mattbucci/motivate"><i class="fa fa-github"></i></a></li>
                 </ul>
             </div>
         </div>

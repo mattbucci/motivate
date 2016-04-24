@@ -1,0 +1,31 @@
+/* Footer */
+
+footer {
+  padding: 140px 0 40px;
+  background: url('../img/footer.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  .bottom-footer {
+    margin-top: 150px;
+  }
+
+  .social-footer {
+    padding: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 0 10px;
+
+      a {
+        font-size: 24px;
+        color: #fff;
+
+        &:hover {
+          color: #00a8ff;
+        }
+      }
+    }
+  }
+}
