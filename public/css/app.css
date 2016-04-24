@@ -5750,18 +5750,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.brand-name {
-  margin-top: .1em;
-  margin-left: .5em; }
-
-.intro-teaser {
-  margin-top: 150px; }
-
-.intro-about {
-  margin-top: 100px; }
-  .intro-about .btn {
-    margin-top: 20px; }
-
 body {
   font-family: 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -5873,22 +5861,6 @@ header .header-text {
   text-align: center;
   vertical-align: middle;
   color: white; }
-
-header .typed {
-  display: inline-block;
-  margin: 0; }
-
-header .typed-cursor {
-  font-size: 60px;
-  display: inline-block;
-  margin: 0 10px;
-  color: #00a8ff;
-  -webkit-animation-name: flash;
-  animation-name: flash;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
 
 a {
   text-decoration: none;
@@ -6650,9 +6622,38 @@ footer .social-footer li:hover a {
     padding-left: 30px; } }
 
 @media (max-width: 400px) {
-  header .typed-cursor {
-    display: none; }
   .pricings .pricing .box-second {
     padding-top: 0; } }
+
+.brand-name {
+  margin-top: .1em;
+  margin-left: .5em; }
+
+header .typed {
+  display: inline-block;
+  margin: 0; }
+
+header .typed-cursor {
+  font-size: 60px;
+  display: inline-block;
+  margin: 0 10px;
+  color: #00a8ff;
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+  @media (max-width: 400px) {
+    header .typed-cursor {
+      display: none; } }
+
+.intro-teaser {
+  margin-top: 150px; }
+
+.intro-about {
+  margin-top: 100px; }
+  .intro-about .btn {
+    margin-top: 20px; }
 
 /*# sourceMappingURL=app.css.map */
