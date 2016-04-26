@@ -9,14 +9,14 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Matthew Bucci" />
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicons/favicon-16x16.png" sizes="16x16">
 
-    <link rel="shortcut icon" href="img/favicons/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/app.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
+    <link rel="stylesheet" type="text/css" href="/css/vendor.css">
 </head>
 
 <body class="@yield('bodyClasses')">
@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand pull-left" href="/">
-                <img class="pull-left" src="img/motivate.png" style="width: 40px;" alt="">
+                <img class="pull-left" src="/img/motivate.png" style="width: 40px;" alt="">
                 <h3 class="brand-name pull-left"> Motivate </h1>
             </a>
         </div>
