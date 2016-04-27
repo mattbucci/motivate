@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', "PageController@landing");
+Route::get('/', 'PageController@landing');
 
 Route::auth();
+
+Route::get('/dashboard', 'DashboardController@index');

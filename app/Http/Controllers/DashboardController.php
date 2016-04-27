@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use Illuminate\Auth\AuthManager;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -22,8 +23,16 @@ class DashboardController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(AuthManager $auth)
     {
+        $user = $auth->user();
+
+        if (count($user->goals) === 0) {
+            return view('pages.getting_started');
+        }
+
         return view('pages.dashboard');
     }
+
+
 }
