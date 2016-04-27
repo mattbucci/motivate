@@ -6573,6 +6573,9 @@ header .typed-cursor {
 
 .goals {
   margin: 40px 0; }
+  .goals a:hover, .goals a:focus {
+    color: #00a8ff;
+    text-decoration: none; }
 
 .goal {
   width: 100%;

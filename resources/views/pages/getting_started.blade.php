@@ -13,7 +13,7 @@
             </div>
             <div class="row goals">
                 @foreach($popularGoals as $goal)
-                    @react_component('App.GoalPreview', $goal)
+                    @react_component('App.Goal.Preview', $goal)
                 @endforeach
             </div>
         </div>

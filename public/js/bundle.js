@@ -22403,7 +22403,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 window.App = {
     Navbar: _navbar2.default,
     Typed: _typed2.default,
-    GoalPreview: _goal2.default
+    Goal: _goal2.default
 };
 
 },{"./components/goal.jsx":190,"./components/navbar.jsx":191,"./components/typed.jsx":192}],190:[function(require,module,exports){
@@ -22427,13 +22427,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var GoalPreview = function (_React$Component) {
-    _inherits(GoalPreview, _React$Component);
+var Preview = function (_React$Component) {
+    _inherits(Preview, _React$Component);
 
-    function GoalPreview(props) {
-        _classCallCheck(this, GoalPreview);
+    function Preview(props) {
+        _classCallCheck(this, Preview);
 
-        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(GoalPreview).call(this, props));
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Preview).call(this, props));
 
         _this.state = {
             id: _this.props.id,
@@ -22445,7 +22445,7 @@ var GoalPreview = function (_React$Component) {
         return _this;
     }
 
-    _createClass(GoalPreview, [{
+    _createClass(Preview, [{
         key: "render",
         value: function render() {
             return _react2.default.createElement(
@@ -22462,9 +22462,7 @@ var GoalPreview = function (_React$Component) {
                     _react2.default.createElement(
                         "h4",
                         { className: "heading" },
-                        this.state.name,
-                        " ",
-                        this.state.id
+                        this.state.name
                     ),
                     _react2.default.createElement(
                         "p",
@@ -22476,10 +22474,60 @@ var GoalPreview = function (_React$Component) {
         }
     }]);
 
-    return GoalPreview;
+    return Preview;
 }(_react2.default.Component);
 
-exports.default = GoalPreview;
+var Page = function (_React$Component2) {
+    _inherits(Page, _React$Component2);
+
+    function Page(props) {
+        _classCallCheck(this, Page);
+
+        var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(Page).call(this, props));
+
+        _this2.state = {
+            id: _this2.props.id,
+            category: _this2.props.category,
+            name: _this2.props.name,
+            description: _this2.props.description
+        };
+
+        return _this2;
+    }
+
+    _createClass(Page, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "a",
+                { className: "col-md-4", href: "/goal/" + this.state.id },
+                _react2.default.createElement(
+                    "div",
+                    { className: "goal" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "icon-holder" },
+                        _react2.default.createElement("img", { src: "img/icons/" + this.state.category + ".png", alt: "", className: "icon" })
+                    ),
+                    _react2.default.createElement(
+                        "h4",
+                        { className: "heading" },
+                        this.state.name
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        { className: "description" },
+                        this.state.description
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Page;
+}(_react2.default.Component);
+
+exports.default = { Preview: Preview, Page: Page };
 
 },{"react":188}],191:[function(require,module,exports){
 'use strict';
