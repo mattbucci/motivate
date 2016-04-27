@@ -7,7 +7,7 @@
             <div class="col-sm-4 text-right text-center-mobile">
                 <ul class="social-footer">
                     <li><a href="http://www.twitter.com/letsrtfm"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="github.com/mattbucci/motivate"><i class="fa fa-github"></i></a></li>
+                    <li><a href="http://github.com/mattbucci/motivate"><i class="fa fa-github"></i></a></li>
                 </ul>
             </div>
         </div>
