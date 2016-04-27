@@ -15,7 +15,7 @@ class CreateGoalUserPivot extends Migration
         Schema::create('goal_user', function (Blueprint $table) {
             $table->integer('goal_id');
             $table->integer('user_id');
-            $table->integer('progress');
+            $table->integer('progress')->default(0);
             $table->integer('difficulty')->nullable();
             $table->integer('rating')->nullable();
             $table->boolean('accomplished')->default(false);

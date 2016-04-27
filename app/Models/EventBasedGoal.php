@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class EventBasedGoal extends Model
 {
+    use CreatesGoal;
+    
+    public $timestamps = false;
+
     /**
      * The attributes that are mass assignable.
      *

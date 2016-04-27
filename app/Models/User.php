@@ -16,7 +16,7 @@ class User extends Authenticatable
     ];
 
     protected $guarded = [
-        'points',
+        'points', 'id',
     ];
 
     /**

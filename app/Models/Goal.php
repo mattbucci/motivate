@@ -12,12 +12,9 @@ class Goal extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'description', 'private'
+        'name', 'description', 'private', 'owner_id'
     ];
-
-    protected $guarded = [
-        'owner_id'
-    ];
+    
 
     public function type()
     {

@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class TimedGoal extends Model
 {
+    use CreatesGoal;
+
+    public $timestamps = false;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -17,6 +21,6 @@ class TimedGoal extends Model
 
     public function goal()
     {
-        return $this->morphTo('App\Models\Goal', 'type');
+        return $this->morphOne('App\Models\Goal', 'type');
     }
 }
