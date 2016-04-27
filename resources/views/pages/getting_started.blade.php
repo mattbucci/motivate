@@ -2,6 +2,8 @@
 
 @section('title', 'Getting Started')
 
+@section('bodyClasses', 'inverted-navbar no-footer')
+
 @section('content')
     <section id="services" class="section section-padded">
         <div class="container">
@@ -9,34 +11,10 @@
                 <h2>Getting Started</h2>
                 <h4 class="light muted">Let's set some goals!</h4>
             </div>
-            <div class="row services">
-                <div class="col-md-4">
-                    <div class="service">
-                        <div class="icon-holder">
-                            <img src="img/icons/heart-blue.png" alt="" class="icon">
-                        </div>
-                        <h4 class="heading">Cardio Training</h4>
-                        <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service">
-                        <div class="icon-holder">
-                            <img src="img/icons/guru-blue.png" alt="" class="icon">
-                        </div>
-                        <h4 class="heading">Yoga Pilates</h4>
-                        <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service">
-                        <div class="icon-holder">
-                            <img src="img/icons/weight-blue.png" alt="" class="icon">
-                        </div>
-                        <h4 class="heading">Power Training</h4>
-                        <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
-                    </div>
-                </div>
+            <div class="row goals">
+                @foreach($popularGoals as $goal)
+                    @react_component('App.GoalPreview', $goal)
+                @endforeach
             </div>
         </div>
     </section>

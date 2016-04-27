@@ -12,7 +12,8 @@ class Goal extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'description', 'private', 'owner_id'
+        'name', 'description', 'private', 'owner_id', 'category',
+        'id', // TODO REMOVE ONCE GOALS ARE DB BACKED
     ];
     
 

@@ -19,13 +19,6 @@
     </ul>
     <a href="#" class="close-link"><i class="arrow_up"></i></a>
 </div>
-<!-- Scripts -->
-<script src="/js/vendor/jquery-1.11.1.min.js"></script>
-<script src="/js/vendor/owl.carousel.min.js"></script>
-<script src="/js/vendor/bootstrap.min.js"></script>
-<script src="/js/vendor/wow.min.js"></script>
-<script src="/js/vendor/typewriter.js"></script>
-<script src="/js/vendor/jquery.onepagenav.js"></script>
 <script src="{{ asset('vendor/react-laravel/react.js') }}"></script>
 <script src="{{ asset('vendor/react-laravel/react-dom.js') }}"></script>
 <script src="{{ asset('js/bundle.js') }}"></script>

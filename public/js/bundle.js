@@ -22394,14 +22394,94 @@ var _typed = require('./components/typed.jsx');
 
 var _typed2 = _interopRequireDefault(_typed);
 
+var _goal = require('./components/goal.jsx');
+
+var _goal2 = _interopRequireDefault(_goal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 window.App = {
     Navbar: _navbar2.default,
-    Typed: _typed2.default
+    Typed: _typed2.default,
+    GoalPreview: _goal2.default
 };
 
-},{"./components/navbar.jsx":190,"./components/typed.jsx":191}],190:[function(require,module,exports){
+},{"./components/goal.jsx":190,"./components/navbar.jsx":191,"./components/typed.jsx":192}],190:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var GoalPreview = function (_React$Component) {
+    _inherits(GoalPreview, _React$Component);
+
+    function GoalPreview(props) {
+        _classCallCheck(this, GoalPreview);
+
+        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(GoalPreview).call(this, props));
+
+        _this.state = {
+            id: _this.props.id,
+            category: _this.props.category,
+            name: _this.props.name,
+            description: _this.props.description
+        };
+
+        return _this;
+    }
+
+    _createClass(GoalPreview, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "a",
+                { className: "col-md-4", href: "/goal/" + this.state.id },
+                _react2.default.createElement(
+                    "div",
+                    { className: "goal" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "icon-holder" },
+                        _react2.default.createElement("img", { src: "img/icons/" + this.state.category + ".png", alt: "", className: "icon" })
+                    ),
+                    _react2.default.createElement(
+                        "h4",
+                        { className: "heading" },
+                        this.state.name,
+                        " ",
+                        this.state.id
+                    ),
+                    _react2.default.createElement(
+                        "p",
+                        { className: "description" },
+                        this.state.description
+                    )
+                )
+            );
+        }
+    }]);
+
+    return GoalPreview;
+}(_react2.default.Component);
+
+exports.default = GoalPreview;
+
+},{"react":188}],191:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -22443,7 +22523,7 @@ var Navbar = function (_React$Component) {
 
 exports.default = Navbar;
 
-},{"react":188}],191:[function(require,module,exports){
+},{"react":188}],192:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
