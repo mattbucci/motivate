@@ -275,18 +275,42 @@
   overflow: hidden;
 
   .fit-height, .img-holder, .img-holder img {
+    transition: background-image 1s ease-in-out;
     height: 100%;
     overflow: hidden;
   }
 
   &-title {
     position: absolute;
+    color: white;
     top: 120px;
+    width: 70%;
     left: 15%;
-    font-size: 9em;
+    font-size: 7em;
   }
 
   form {
     padding: 150px 30px;
+  }
+}
+
+.form--basic {
+  .img-holder {
+    background-image: url('/img/form-basic.jpeg');
+    background-size: cover;
+  }
+}
+
+.form--timed {
+  .img-holder {
+    background-image: url('/img/form-timed.jpeg');
+    background-size: cover;
+  }
+}
+
+.form--incremental {
+  .img-holder {
+    background-image: url('/img/form-event.jpeg');
+    background-size: cover;
   }
 }
