@@ -22453,7 +22453,7 @@ var Preview = function (_React$Component) {
                 { className: "col-md-4", href: "/goal/" + this.state.id },
                 _react2.default.createElement(
                     "div",
-                    { className: "goal" },
+                    { className: "goal_preview" },
                     _react2.default.createElement(
                         "div",
                         { className: "icon-holder" },
@@ -22477,13 +22477,13 @@ var Preview = function (_React$Component) {
     return Preview;
 }(_react2.default.Component);
 
-var Page = function (_React$Component2) {
-    _inherits(Page, _React$Component2);
+var CreateForm = function (_React$Component2) {
+    _inherits(CreateForm, _React$Component2);
 
-    function Page(props) {
-        _classCallCheck(this, Page);
+    function CreateForm(props) {
+        _classCallCheck(this, CreateForm);
 
-        var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(Page).call(this, props));
+        var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(CreateForm).call(this, props));
 
         _this2.state = {
             id: _this2.props.id,
@@ -22493,6 +22493,34 @@ var Page = function (_React$Component2) {
         };
 
         return _this2;
+    }
+
+    _createClass(CreateForm, [{
+        key: "render",
+        value: function render() {
+            return;
+        }
+    }]);
+
+    return CreateForm;
+}(_react2.default.Component);
+
+var Page = function (_React$Component3) {
+    _inherits(Page, _React$Component3);
+
+    function Page(props) {
+        _classCallCheck(this, Page);
+
+        var _this3 = _possibleConstructorReturn(this, Object.getPrototypeOf(Page).call(this, props));
+
+        _this3.state = {
+            id: _this3.props.id,
+            category: _this3.props.category,
+            name: _this3.props.name,
+            description: _this3.props.description
+        };
+
+        return _this3;
     }
 
     _createClass(Page, [{

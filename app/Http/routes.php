@@ -15,4 +15,8 @@ Route::get('/', 'PageController@landing');
 
 Route::auth();
 
-Route::get('/dashboard', 'DashboardController@index');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/dashboard', 'DashboardController@index');
+    Route::resource('reward', 'RewardController');
+    Route::resource('goal', 'GoalController');
+});

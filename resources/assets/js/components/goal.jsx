@@ -15,7 +15,7 @@ class Preview extends React.Component {
     render() {
         return (
             <a className="col-md-4" href={"/goal/" + this.state.id}>
-                <div className="goal">
+                <div className="goal_preview">
                     <div className="icon-holder">
                             <img src={"img/icons/" + this.state.category + ".png"} alt="" className="icon" />
                     </div>
@@ -24,6 +24,22 @@ class Preview extends React.Component {
                 </div>
             </a>
         );
+    }
+}
+
+class CreateForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            id: this.props.id,
+            category: this.props.category,
+            name: this.props.name,
+            description: this.props.description
+        };
+
+    }
+    render() {
+        return;
     }
 }
 

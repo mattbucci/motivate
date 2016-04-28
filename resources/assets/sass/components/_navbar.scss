@@ -6,7 +6,6 @@
 }
 
 /* Navigation Bar ( Navbar ) */
-
 nav.navbar {
   position: absolute;
   z-index: 9500;
@@ -91,6 +90,14 @@ nav.navbar {
         color: #fff;
         background: #00a8ff;
       }
+    }
+  }
+}
+
+.inverted-navbar {
+  nav.navbar {
+    a, .brand-name {
+      color: black;
     }
   }
 }

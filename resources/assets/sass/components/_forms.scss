@@ -269,3 +269,24 @@
   color: white;
   font-size: 1.1em;
 }
+
+.split-form {
+  height: 100VH;
+  overflow: hidden;
+
+  .fit-height, .img-holder, .img-holder img {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &-title {
+    position: absolute;
+    top: 120px;
+    left: 15%;
+    font-size: 9em;
+  }
+
+  form {
+    padding: 150px 30px;
+  }
+}
